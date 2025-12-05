@@ -31,7 +31,7 @@ import {
 import { assets } from './assets';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [showSchematics, setShowSchematics] = useState(false); 
 
@@ -114,12 +114,14 @@ const Portfolio = () => {
 
       {/* Navigation */}
       <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0a192f]/80 shadow-lg backdrop-blur-md py-4' : 'bg-transparent py-6'} px-6 md:px-12 flex justify-between items-center`}>
-        <div className="text-cyan-400 font-mono font-bold text-xl tracking-tighter border-2 border-cyan-400 p-1 rounded hover:bg-cyan-400/10 cursor-default transition-colors hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+        <div 
+          onClick={() => scrollToSection('home')}
+          className="text-cyan-400 font-mono font-bold text-xl tracking-tighter border-2 border-cyan-400 p-1 rounded hover:bg-cyan-400/10 cursor-pointer transition-colors hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
           &gt;_ PT
         </div>
         
         <div className="hidden md:flex items-center gap-8">
-          <NavLink id="about" text="ABOUT" number="01" />
+          <NavLink id="home" text="HOME" number="01" />
           <NavLink id="skills" text="SKILLS" number="02" />
           <NavLink id="projects" text="PROJECTS" number="03" />
           <button 
@@ -136,7 +138,7 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="about" className="min-h-screen flex flex-col justify-center px-6 md:px-24 max-w-6xl mx-auto pt-20 relative z-10">
+      <section id="home" className="min-h-screen flex flex-col justify-center px-6 md:px-24 max-w-6xl mx-auto pt-20 relative z-10">
         <p className="font-mono text-cyan-400 mb-5 animate-fade-in-down">Hi, my name is</p>
         
         <SpotlightText className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight leading-tight cursor-default">
