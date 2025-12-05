@@ -363,6 +363,8 @@ const Portfolio = () => {
         </div>
 
         {/* Other Projects Grid */}
+        {/*
+        
         <h3 className="text-2xl font-bold text-slate-100 mb-10 text-center">Other Noteworthy Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <ProjectCard 
@@ -381,6 +383,8 @@ const Portfolio = () => {
             tech={["WordPress", "PHP", "CSS"]}
           />
         </div>
+        
+        */}
       </section>
 
       {/* Contact Section */}
