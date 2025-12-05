@@ -391,19 +391,29 @@ const Portfolio = () => {
         */}
       </section>
 
+
+
       {/* Contact Section */}
+
       <section id="contact" className="py-20 px-6 md:px-24 max-w-4xl mx-auto text-center mb-20 relative z-10">
-        <p className="text-cyan-400 font-mono mb-4 text-sm">04. What's Next?</p>
+        <p className="text-cyan-400 font-mono mb-4 text-sm">What's Next?</p>
         <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6 hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.5)] transition-all">Get In Touch</h2>
         <p className="text-slate-400 text-lg mb-12 mx-auto max-w-lg">
           I'm currently looking for new opportunities as a Web Developer. 
           Whether you have a question about my stack or just want to say hi, I'll try my best to get back to you!
         </p>
+
+        {/*
         <a 
           href="mailto:pongsarunque@gmail.com" 
           className="inline-block border border-cyan-400 text-cyan-400 px-8 py-4 rounded font-mono hover:bg-cyan-400/10 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] backdrop-blur-sm"
         >
-          Say Hello
+          My Resume
+        </a>
+        */}
+        
+        <a href={assets.docs.MyResumePdf} className="inline-block border border-cyan-400 text-cyan-400 px-8 py-4 rounded font-mono hover:bg-cyan-400/10 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] backdrop-blur-sm">
+          My Resume
         </a>
       </section>
 
