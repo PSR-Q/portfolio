@@ -412,6 +412,17 @@ const Portfolio = () => {
         </a>
         */}
 
+        {/* Photo placeholder (circle) */}
+        <div className="flex justify-center mb-8">
+          <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden ring-2 ring-cyan-400/30 bg-gradient-to-br from-[#0a192f] to-[#112240] flex items-center justify-center">
+            <img
+              src={assets.profilePhoto || 'https://via.placeholder.com/400'}
+              alt="Pongsarun Tisuwan"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
         <a href={assets.docs.MyResumePdf} className="inline-block border border-cyan-400 text-cyan-400 px-8 py-4 rounded font-mono hover:bg-cyan-400/10 transition-all cursor-pointer hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] backdrop-blur-sm">
           My Resume
         </a>

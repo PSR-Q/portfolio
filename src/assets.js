@@ -21,6 +21,7 @@ export const assets = {
   // เอกสาร (Documents)
   docs: {
     zenGardenPdf: "/Computer_Vision_in_Robotic_Zen_Garden_Systems_An_Embedded_Approach_for_Contour_Detection_and_Pattern_Generation.pdf",
+    MyResumePdf: "/My_Resume.pdf",
   },
 
   // โลโก้เทคโนโลยี (Tech Logos)
@@ -50,5 +51,6 @@ export const assets = {
   // รูปสำหรับ Modal (Schematics)
   schematics: {
     optoIsolator: "/Opto_diagram.png",
-  }
+  },
+  profilePhoto: "/MyPicProfile.png",
 };
