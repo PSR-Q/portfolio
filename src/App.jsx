@@ -411,8 +411,8 @@ const Portfolio = () => {
           My Resume
         </a>
         */}
-        
-        <a href={assets.docs.MyResumePdf} className="inline-block border border-cyan-400 text-cyan-400 px-8 py-4 rounded font-mono hover:bg-cyan-400/10 transition-all hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] backdrop-blur-sm">
+
+        <a href={assets.docs.MyResumePdf} className="inline-block border border-cyan-400 text-cyan-400 px-8 py-4 rounded font-mono hover:bg-cyan-400/10 transition-all cursor-pointer hover:shadow-[0_0_15px_rgba(34,211,238,0.4)] backdrop-blur-sm">
           My Resume
         </a>
       </section>
