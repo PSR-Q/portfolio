@@ -22,14 +22,16 @@ import {
   Box,
   ScanLine,
   Camera,   
-  Monitor   
+  Monitor,
+  Microchip,
+  AppWindowMac
 } from 'lucide-react';
 
 // Import assets
 import { assets } from './assets';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('about');
   const [isScrolled, setIsScrolled] = useState(false);
   const [showSchematics, setShowSchematics] = useState(false); 
 
@@ -112,7 +114,7 @@ const Portfolio = () => {
 
       {/* Navigation */}
       <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#0a192f]/80 shadow-lg backdrop-blur-md py-4' : 'bg-transparent py-6'} px-6 md:px-12 flex justify-between items-center`}>
-        <div className="text-cyan-400 font-mono font-bold text-xl tracking-tighter border-2 border-cyan-400 p-1 rounded hover:bg-cyan-400/10 cursor-pointer transition-colors hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
+        <div className="text-cyan-400 font-mono font-bold text-xl tracking-tighter border-2 border-cyan-400 p-1 rounded hover:bg-cyan-400/10 cursor-default transition-colors hover:shadow-[0_0_15px_rgba(34,211,238,0.5)]">
           &gt;_ PT
         </div>
         
@@ -134,7 +136,7 @@ const Portfolio = () => {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex flex-col justify-center px-6 md:px-24 max-w-6xl mx-auto pt-20 relative z-10">
+      <section id="about" className="min-h-screen flex flex-col justify-center px-6 md:px-24 max-w-6xl mx-auto pt-20 relative z-10">
         <p className="font-mono text-cyan-400 mb-5 animate-fade-in-down">Hi, my name is</p>
         
         <SpotlightText className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight leading-tight cursor-default">
@@ -364,7 +366,7 @@ const Portfolio = () => {
 
         {/* Other Projects Grid */}
         {/*
-        
+
         <h3 className="text-2xl font-bold text-slate-100 mb-10 text-center">Other Noteworthy Projects</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <ProjectCard 
@@ -440,14 +442,14 @@ const Portfolio = () => {
 
       {/* Social Sidebars */}
       <div className="hidden md:flex flex-col fixed left-6 md:left-12 bottom-0 gap-6 text-slate-400 items-center z-50">
-        <Github className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all cursor-pointer" />
-        <Linkedin className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all cursor-pointer" />
-        <Mail className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all cursor-pointer" />
+        <Camera className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all" />
+        <Microchip className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all" />
+        <AppWindowMac className="w-5 h-5 hover:text-cyan-400 hover:-translate-y-1 transition-all" />
         <div className="w-[1px] h-24 bg-slate-400 mt-2"></div>
       </div>
       
       <div className="hidden md:flex flex-col fixed right-6 md:right-12 bottom-0 gap-6 text-slate-400 items-center z-50">
-        <a href="mailto:pongsarunque@gmail.com" className="font-mono text-xs hover:text-cyan-400 hover:-translate-y-1 transition-all vertical-text tracking-widest" style={{ writingMode: 'vertical-rl' }}>
+        <a href="mailto:pongsarunque@gmail.com" className="font-mono text-xs hover:text-cyan-400 hover:-translate-y-1 transition-all vertical-text tracking-widest cursor-default" style={{ writingMode: 'vertical-rl' }}>
           pongsarunque@gmail.com
         </a>
         <div className="w-[1px] h-24 bg-slate-400 mt-2"></div>
